@@ -1,6 +1,16 @@
-# ejercicio_1
+# flutter-currency-converter
 
-A new Flutter project.
+Proyecto en flutter cuyo objetivo es recibir datos mediante un teclado nativo de la aplicacion, dichos datos recolectados en el textfield origen seran de un tipo determinado de denominacion monetaria la cual sera seleccionada por medio de ConverterPage el cual mediante procesos logicos de la aplicacion seran convertidos en la denominacion monetaria de su eleccion
+
+
+# DEMO DE LA APLICACION
+
+# INTEGRANTES DEL GRUPO DERARROLLADOR 
+- Jorge Mario Acevedo Salcedo
+- Jorge Alejandro González Rodríguez
+- Ivan Noguera Sáenz
+- William Benavidez Murcia
+
 
 ## Getting Started
 
