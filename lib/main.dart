@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         brightness: Brightness.dark,
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.yellow,
       ),
       home: const MyHomePage(title: 'Currency Converter'),
       debugShowCheckedModeBanner: false,
