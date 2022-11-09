@@ -4,8 +4,7 @@ class SelectionItem extends StatelessWidget {
   final String title;
   final bool isForList;
 
-  const SelectionItem(
-      {super.key, required this.title, required this.isForList});
+  const SelectionItem({super.key, required this.title, this.isForList = true});
 
   @override
   Widget build(BuildContext context) {

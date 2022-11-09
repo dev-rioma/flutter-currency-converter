@@ -1,10 +1,11 @@
+import 'package:ejercicio_1/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'one_key.dart';
 
 class KeyPad extends StatefulWidget {
   final String textCurrency1;
   final String textCurrency2;
-  final String rate;
+  final double rate;
 
   const KeyPad(
       {super.key,
@@ -23,9 +24,11 @@ class _KeyPadState extends State<KeyPad> {
   void _onPressed(int k) {
     setState(() {
       if (k == 10) {
-        print("vamos1");
+        _currency1 = 0;
+        _currency2 = 0;
       } else {
-        print("vamos2");
+        _currency1 = int.parse(_currency1.toString() + k.toString());
+        _currency2 = double.parse(_currency1.toString()) * widget.rate;
       }
     });
   }
@@ -69,9 +72,9 @@ class _KeyPadState extends State<KeyPad> {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text('se muestra textCurrency1'),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(widget.textCurrency2),
             ),
             Expanded(
               child: Container(),
@@ -108,9 +111,9 @@ class _KeyPadState extends State<KeyPad> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               // const Text("OneKey para 6, 5 y 4"),
-              OneKey(number: 6, callback: _onPressed),
+              OneKey(number: 4, callback: _onPressed),
               OneKey(number: 5, callback: _onPressed),
-              OneKey(number: 4, callback: _onPressed)
+              OneKey(number: 6, callback: _onPressed)
             ],
           ),
         ),
@@ -119,7 +122,7 @@ class _KeyPadState extends State<KeyPad> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              const Text("OneKey para 1, 2 y 3"),
+              // const Text("OneKey para 1, 2 y 3"),
               OneKey(number: 1, callback: _onPressed),
               OneKey(number: 2, callback: _onPressed),
               OneKey(number: 3, callback: _onPressed),
@@ -143,7 +146,8 @@ class _KeyPadState extends State<KeyPad> {
                   "Reset",
                   style: TextStyle(
                     fontSize: 26.0,
-                    color: Colors.white,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
