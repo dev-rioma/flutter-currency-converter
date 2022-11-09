@@ -5,6 +5,12 @@ Proyecto en flutter cuyo objetivo es recibir datos mediante un teclado nativo de
 
 # DEMO DE LA APLICACION
 
+
+
+https://user-images.githubusercontent.com/114000553/200706853-6c1767e7-0b99-4e61-bbeb-fbea35a960da.mp4
+
+
+
 # INTEGRANTES DEL GRUPO DERARROLLADOR 
 - Jorge Mario Acevedo Salcedo
 - Jorge Alejandro González Rodríguez
