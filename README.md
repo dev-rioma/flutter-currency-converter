@@ -7,7 +7,7 @@ Proyecto en flutter cuyo objetivo es recibir datos mediante un teclado nativo de
 
 
 
-https://user-images.githubusercontent.com/114000553/200706853-6c1767e7-0b99-4e61-bbeb-fbea35a960da.mp4
+https://user-images.githubusercontent.com/114000553/200727944-067b033d-5b89-4d70-83d3-c0ef8e3a03aa.mp4
 
 
 
